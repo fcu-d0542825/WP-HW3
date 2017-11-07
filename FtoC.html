@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<!-- Fig. 6.1: welcome.html -->
+<!-- Displaying a line of text. -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content = "text/html; charset=big5">
+    <title>攝氏溫度轉華氏溫度</title>
+    <script type = "text/javascript">
+      
+      var fahrenheitTemperature;
+      var celsiusTemperature;
+      celsiusTemperature = window.prompt( "Enter the Celsius temperature" );
+      fahrenheitTemperature = temperatureTranslate(celsiusTemperature);
+	  document.writeln( "<p>The Celsius temperature is " + celsiusTemperature +"°C</p>");
+      document.writeln( "<p>The Fahrenheit temperature is " + fahrenheitTemperature +"℉</p>");
+      
+	  function temperatureTranslate(temperature)
+	  {
+	    return temperature * 9 / 5 + 32;
+	  }
+	  
+    </script>
+  </head><body></body>
+</html>
